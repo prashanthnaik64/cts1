@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title>Fitness Club</title>
+<style type="text/css">
+	#tbl1{
+
+	}
+  #i2link{
+
+  }
+.table{
+      
+             border-collapse: collapse;
+  /*border: 1px solid black;*/
+
+
+    }
+    th,td {
+  border: 1px solid black;
+}
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <script src="cartScript.js"></script>
+<script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.width = "15%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+<body  onload="loadItems()">
+  
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+    <img src="logo.jpg" alt="Smiley face" height="100" width="205" class="rounded-circle">
+    <div class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        
+      </div>
+      <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar" style="margin-left:25px"style="width:15%">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="index1.html" class="w3-bar-item w3-button">Place Appointment</a>
+        <a href="index2.html" class="w3-bar-item w3-button">View Appointment</a>
+        <a href="index3.html" class="w3-bar-item w3-button">Contact Us</a>
+      </div>
+  </div>
+
+<!-- Page Content -->
+<div style="margin-left:15%">
+
+
+    <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index1.html">Place Appointment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index2.html">View Appointment</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index3.html" >Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+
+<br>
+  <table align="center">
+    <thead>
+      <tr>
+        <th >Name</th>
+        <th ></th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Package Price</th>
+
+      </tr>
+    </thead>
+    <tbody id="prdData"></tbody>
+  </table>
+  <br>
+  <a style="margin-left:390px; " href="index1.html" id="i2link" ><STRONG>Add Appointment</STRONG></a>
+
+</div>
+
+
+      
+</body>
+</html>

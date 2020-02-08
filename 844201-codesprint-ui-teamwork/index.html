@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<title>Fitness Club</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.width = "15%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+<body >
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+    <img src="logo.jpg" alt="Smiley face" height="100" width="205" class="rounded-circle">
+    <div class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        
+      </div>
+      <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar" style="margin-left:25px"style="width:15%">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="index1.html" class="w3-bar-item w3-button">Place Appointment</a>
+        <a href="index2.html" class="w3-bar-item w3-button">View Appointment</a>
+        <a href="index3.html" class="w3-bar-item w3-button">Contact Us</a>
+
+      </div>
+  </div>
+
+<!-- Page Content -->
+<div style="margin-left:15%">
+
+
+    <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index1.html">Place Appointment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index2.html">View Appointment</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index3.html" >Contact Us</a>
+            </li>
+          </ul>
+        
+        <br>
+        <br>
+         <h1 style="color:chocolate;" >General Fitness Training</h1>
+         
+         <p style="color:darkcyan;" style="font-size: medium;">General fitness training works towards broad goals of overall health and well-being, rather than narrow goals of sport competition, larger muscles or concerns over appearance. A regular moderate workout regimen and healthy diet can improve general appearance markers of good health such as muscle tone, healthy skin, hair and nails, while preventing age or lifestyle-related reductions in health and the series of heart and organ failures that accompany inactivity and poor diet.</p>
+         <p style="color:darkcyan;">
+          Diet itself helps to increase calorie burning by boosting metabolism, a process further enhanced while gaining more lean muscle. An aerobic exercise program can burn fat and increase the metabolic rate.
+         </p>
+         <a href="index1.html" class="btn btn-primary">Apply for trainer</a>
+        
+      </div>
+</div>
+</div>
+
+      
+</body>
+</html>
